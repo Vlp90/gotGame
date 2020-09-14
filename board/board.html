@@ -6,6 +6,7 @@
     <title>Games of Thrones Legacy</title>
     <link rel="stylesheet" href="./board.css">
     <script type="module" src="./main.js"></script>
+    
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 </head>
 
 <body class="main-image">
-    <section >
+    <section class="main__board" >
 
              <!-- SECTION HAUT -->
 
@@ -432,15 +433,21 @@
 
     <div class='middle-both'>
         <div class= "middle-center-left">
+            <!-- //////////////////////////////////////////////////////////////// -->
+
+
+
+
+            <!-- //////////////////////////////////////////////////////////////// -->
 
             <div id="player0-container" class="container-player">
-                <p><span class ="play0 colorPick0"><strong>No player</strong></span> </p>
+                <p id='noPlayer0' ><span class ="play0 colorPick0"><strong>No player</strong></span> </p>
                 <div class="GameOver attributeCard">
                     <div class="cost">
                         <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
                             <path class ="colorPick0" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
                         </svg>
-                        <p>: <span class="life-player">0</span> </p>
+                        <p>: <span id="noLifePlayer0" class="life-player">1000</span> </p>
                     </div>
                     <p>|</p>
                     <div class="number">
@@ -460,7 +467,7 @@
                         <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
                             <path class ="colorPick1" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
                         </svg>
-                        <p>: <span class="life-player">0</span>  </p>
+                        <p>: <span id="noLifePlayer1" class="life-player">1500</span>  </p>
                     </div>
                     <p>|</p>
                     <div class="number">
@@ -479,7 +486,7 @@
                         <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
                             <path class ="colorPick2" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
                         </svg>
-                        <p>: <span class="life-player">0</span>  </p>
+                        <p>: <span id="noLifePlayer2" class="life-player">0</span>  </p>
                     </div>
                     <p>|</p>
                     <div class="number">
@@ -492,13 +499,13 @@
             </div>
 
             <div id="player3-container" class="container-player">
-                <p><span class ="play3 colorPick3"><strong>No player</strong></span> </p>
+                <p id='noPlayer3'><span  class ="play3 colorPick3"><strong>No player</strong></span> </p>
                 <div class="GameOver attributeCard">
                     <div class="cost">
                         <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
                             <path class ="colorPick3" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
                         </svg>
-                        <p>: <span class="life-player">0</span>  </p>
+                        <p>: <span id="noLifePlayer3" class="life-player">0</span>  </p>
                     </div>
                     <p>|</p>
                     <div class="number">

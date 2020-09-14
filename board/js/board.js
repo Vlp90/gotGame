@@ -2,6 +2,7 @@ import { Member } from "./member.js";
 import { Card } from "./card.js";
 import { Player } from "./player.js";
 
+
 const buyMessage = 'Would you buy the member ?';
 const playTimeMessage = 'Its time to play';
 
@@ -65,11 +66,13 @@ export class Board {
     ];
     const localPlayers = localStorage.getItem('players');
     const playersData = JSON.parse(localPlayers);
-
+    
     this.players = playersData.map((player, index) => new Player(player.name, player.color, index));
     this.currentPlayer = this.players[0];
     this.turn = 0;
   }
+
+
 
   init = () => {
     document.getElementById('dice-btn').onclick = this.handleDiceClick;
@@ -140,3 +143,4 @@ export class Board {
     this.handleCommonClick();
   }
 }
+

@@ -1,3 +1,39 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Div players
+let divNoPlayer0 = document.getElementById('player0-container')
+let divNoPlayer1 = document.getElementById('player1-container')
+let divNoPlayer2 = document.getElementById('player2-container')
+let divNoPlayer3 = document.getElementById('player3-container')
+
+// P id
+let noPlayer0 = document.getElementById("noLifePlayer0");
+let noPlayer1 = document.getElementById("noLifePlayer1");
+let noPlayer2 = document.getElementById("noLifePlayer2");
+let noPlayer3 = document.getElementById("noLifePlayer3");
+
+
+
+// Value
+let valuePlayer0 = noPlayer0.textContent
+let valuePlayer1 = noPlayer1.textContent
+let valuePlayer2 = noPlayer2.textContent
+let valuePlayer3 = noPlayer3.textContent
+
+// // convert
+let convertvaluePlayer0 =  parseInt(valuePlayer0, 10);
+let convertvaluePlayer1 =  parseInt(valuePlayer1, 10);
+let convertvaluePlayer2 =  parseInt(valuePlayer2, 10);
+let convertvaluePlayer3 =  parseInt(valuePlayer3, 10);
+
+// console.log("BEFORE CONVERT", convertvaluePlayer0)
+// console.log("BEFORE CONVERT", convertvaluePlayer3)
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 export class Player {
 	constructor(name, color, index) {
@@ -16,11 +52,50 @@ export class Player {
   }
   
   init() {
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+if (convertvaluePlayer0 === 0)  {
+  divNoPlayer0.style.display = "none"
+  console.log("WORKING")
+
+} else {
+  noPlayer0.innerHTML='No player'
+}
+
+if (convertvaluePlayer1 === 0)  {
+  divNoPlayer1.style.display = "none"
+  console.log("WORKING")
+
+} else {
+  noPlayer1.innerHTML='No player'
+}
+
+if (convertvaluePlayer2 === 0)  {
+  divNoPlayer2.style.display = "none"
+  console.log("WORKING")
+
+} else {
+  noPlayer2.innerHTML='No player'
+}
+
+
+if (convertvaluePlayer3 === 0)  {
+  divNoPlayer3.style.display = "none"
+  console.log("WORKING")
+} else {
+  noPlayer3.innerHTML='No player'
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
     console.log(`#card-0 .player${this.index}-color`);
     document.querySelector(`#card-0 .player${this.index}-color`).style.visibility = 'visible';
     this.element.querySelector('.life-player').innerHTML = this.life;
 
     console.log(document.querySelector(`#card-0 .player${this.index}-color`));
+
     
     // COULEURS SCORE
     document.querySelectorAll(`.colorPick${this.index}`).forEach(color => {
@@ -35,8 +110,15 @@ export class Player {
     document.querySelectorAll(`.play${this.index}`).forEach(player => {
       player.style.color = this.color;
       player.innerHTML = this.name;
+     
     });
+
+    
   }
+
+  
+
+  
 
 	move(nextPosition) {
 		let oldPosition = this.position;

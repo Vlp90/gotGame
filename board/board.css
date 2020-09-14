@@ -9,7 +9,8 @@
 	background-image: url("../images/bordImage.jpg");
 	background-size: cover;
 	width: 100%;
-	/*height: 100vh;*/
+	height: 100%;
+	padding: 0 50px 50px 50px;
 	background-position: center;
 	display: flex;
 	flex-direction: column;
@@ -67,6 +68,7 @@
 
 .hide {
 	visibility: hidden;
+	/* display: none; */
 }
 
 /*CARD GENERAL*/
@@ -478,3 +480,6 @@
 .audioTheme {
 display: none;	
 }
+
+/* .main__board {
+} */
