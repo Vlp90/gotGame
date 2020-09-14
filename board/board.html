@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games of Thrones Legacy</title>
+    <link rel="stylesheet" href="./board.css">
+    <script type="module" src="./main.js"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="main-image">
+    <section >
+
+             <!-- SECTION HAUT -->
+
+        <section class="up-section inline">
+
+              <!-- KINGS LANDING EVENT -->
+
+            <div id="card-0" class="event-member">
+                
+                <div id="kings-landing" class="cost eventCard">
+                    <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                        <path class ="iconWhite" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                    </svg>
+                    <p class="numGainEvent">: + <span class="value-card-life">150</span></p>
+                </div>
+
+                <div class='player-container'>
+                    <div>
+                        <div class="player0-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player1-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player2-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player3-color hide"></div>
+                    </div>
+    
+
+                </div>
+
+                
+            </div>
+
+
+            <div class="allMembers">
+
+                <!-- NED STARK -->
+
+                <div id="card-1" class="card-member">
+                    <div class="family-color iconBlue">Ned Stark</div>
+                    <div id="nedStark"></div>
+                    <div>
+                        <div class="attributeCard">
+                            <div class="damage">
+                                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                                    <path class ="iconBlue" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                                </svg>
+                                <p class="numDamage">: <span class="value-card-damage">700</span></p>
+                            </div>
+                            <p>|</p>
+                            <div class="cost">
+                                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                                    <path class ="iconBlue" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                                </svg>
+                                <p class="numCost">: <span class="value-card-life">150</span> </p>
+                            </div>
+                        </div >
+                            <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+                    </div>
+                    <div class='player-container'>
+                        <div>
+                            <div class="player0-color hide"></div>
+                        </div>
+                    
+                        <div>
+                            <div class="player1-color hide"></div>
+                        </div>
+                    
+                        <div>
+                            <div class="player2-color hide"></div>
+                        </div>
+                    
+                        <div>
+                            <div class="player3-color hide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SANSA STARK -->
+
+            <div id="card-2" class="card-member">
+                <div class="family-color iconBlue">Sansa Stark</div>
+                <div id="sansa"></div>
+                <div>
+                    <div class="attributeCard">
+                        <div class="damage">
+                            <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                                <path class ="iconBlue" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                            </svg>
+                            <p class="numDamage">: <span class="value-card-damage">700</span></p>
+                        </div>
+                        <p>|</p>
+                        <div class="cost">
+                            <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                                <path class ="iconBlue" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                            </svg>
+                            <p class="numCost">: <span class="value-card-life">150</span> </p>
+                        </div>
+                    </div >
+                        <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+                </div>
+                <div class='player-container'>
+                    <div>
+                        <div class="player0-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player1-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player2-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player3-color hide"></div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Robb  STARK -->
+
+        <div id="card-3" class="card-member">
+            <div class="family-color iconBlue">Robb Stark</div>
+            <div id="robb"></div>
+            <div>
+                <div class="attributeCard">
+                    <div class="damage">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                            <path class ="iconBlue" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                        </svg>
+                        <p class="numDamage">: <span class="value-card-damage">700</span></p>
+                    </div>
+                    <p>|</p>
+                    <div class="cost">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="iconBlue" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                        <p class="numCost">: <span class="value-card-life">150</span> </p>
+                    </div>
+                </div >
+                    <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+            </div>
+            <div class='player-container'>
+                <div>
+                    <div class="player0-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player1-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player2-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player3-color hide"></div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Arya STARK -->
+
+    <div id="card-4" class="card-member">
+        <div class="family-color iconBlue">Arya Stark</div>
+        <div id="arya"></div>
+        <div>
+            <div class="attributeCard">
+                <div class="damage">
+                    <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                        <path class ="iconBlue" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                    </svg>
+                    <p class="numDamage">: <span class="value-card-damage">700</span></p>
+                </div>
+                <p>|</p>
+                <div class="cost">
+                    <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                        <path class ="iconBlue" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                    </svg>
+                    <p class="numCost">: <span class="value-card-life">150 </span></p>
+                </div>
+            </div >
+                <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+        </div>
+        <div class='player-container'>
+            <div>
+                <div class="player0-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player1-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player2-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player3-color hide"></div>
+            </div>
+    </div>
+</div>
+
+            <!-- NERRA BATTLE EVENT -->
+
+            <div id="card-5" class="event-member">
+                <div id="nerra-battle" class="cost eventCard">
+                    <div class="damage">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                            <path class ="iconWhite" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                        </svg>
+                        <p class="numGainEvent">: - <span class="value-card-damage">500</span></p>
+                    </div>
+                    
+                </div>
+                <div class='player-container'>
+                    <div>
+                        <div class="player0-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player1-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player2-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player3-color hide"></div>
+                    </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION MIDDLE -->
+
+        <!-- MIDDLE LEFT-->
+
+        <section class="middle">
+
+<section class="middle-left">
+
+     <!-- Daenerys Targaryen -->
+
+     <div id="card-17" class="card-member rotate">
+        <div class="family-color iconViolet">Daenerys Targaryen</div>
+        <div id="daenerys"></div>
+        <div>
+            <div class="attributeCard">
+                <div class="damage">
+                    <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                        <path class ="iconViolet" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                    </svg>
+                    <p class="numDamage" >: <span class="value-card-damage">700</span></p>
+                </div>
+                <p>|</p>
+                <div class="cost">
+                    <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                        <path class ="iconViolet" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                    </svg>
+                    <p class="numCost">: <span class="value-card-life">150 </span></p>
+                </div>
+            </div >
+                <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+        </div>
+        <div class='player-container'>
+            <div>
+                <div class="player0-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player1-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player2-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player3-color hide"></div>
+            </div>
+    </div>
+</div>
+
+<!-- Rhaegar Targaryen -->
+
+<div id="card-16" class="card-member rotate">
+    <div class="family-color iconViolet">Rhaegar Targaryen</div>
+    <div id="rhaegar"></div>
+    <div>
+        <div class="attributeCard">
+            <div class="damage">
+                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                    <path class ="iconViolet" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                </svg>
+                <p class="numDamage">: <span class="value-card-damage">700</span></p>
+            </div>
+            <p>|</p>
+            <div class="cost">
+                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path class ="iconViolet" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                </svg>
+                <p class="numCost">: <span class="value-card-life">150 </span></p>
+            </div>
+        </div >
+            <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+    </div>
+    <div class='player-container'>
+        <div>
+            <div class="player0-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player1-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player2-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player3-color hide"></div>
+        </div>
+</div>
+</div>
+
+<!-- Viserys Targaryen -->
+
+<div id="card-15" class="card-member rotate">
+    <div class="family-color iconViolet">Viserys Targaryen</div>
+    <div id="viserys"></div>
+    <div>
+        <div class="attributeCard">
+            <div class="damage">
+                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                    <path class ="iconViolet" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                </svg>
+                <p class="numDamage">: <span class="value-card-damage">700</span></p>
+            </div>
+            <p>|</p>
+            <div class="cost">
+                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path class ="iconViolet" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                </svg>
+                <p class="numCost">: <span class="value-card-life">150</span> </p>
+            </div>
+        </div >
+            <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+    </div>
+    <div class='player-container'>
+        <div>
+            <div class="player0-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player1-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player2-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player3-color hide"></div>
+        </div>
+</div>
+</div>
+
+</section>
+
+ <!-- MIDDLE CENTER 
+
+  MIDDLE center right Version BUY
+
+
+
+
+-->
+<section class="middle-center">
+
+    <div class="middle-center-right">
+
+        <div id="iron-throne">
+            The new King is <div id="winner-player-name"></div>
+        </div>
+
+        <div id="game-in-progress">
+        <div class="player-init">
+            <p id='player-play'></p>
+            <p id='message-play'></p>
+        </div>
+    
+        <div id="button-action-buy" class="button-action">
+            <button id="buy-btn" class="buy-btn">Buy member</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+
+        <div id="button-action-play" class="button-action">
+            <button id="dice-btn" class="dice-btn">Roll Dices</button>
+        </div>
+        </div>
+    </div>
+
+    
+    
+
+    <div class='middle-both'>
+        <div class= "middle-center-left">
+
+            <div id="player0-container" class="container-player">
+                <p><span class ="play0 colorPick0"><strong>No player</strong></span> </p>
+                <div class="GameOver attributeCard">
+                    <div class="cost">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick0" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                        <p>: <span class="life-player">0</span> </p>
+                    </div>
+                    <p>|</p>
+                    <div class="number">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick0" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                        </svg>
+                        <p>: <span class="cardOwned-player">0</span></p>
+                    </div>
+                    
+                </div >
+            </div>
+
+            <div id="player1-container" class="container-player">
+                <p ><span class="play1 colorPick1"><strong>No player</strong></span> </p>
+                <div class="GameOver attributeCard">
+                    <div class="cost">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick1" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                        <p>: <span class="life-player">0</span>  </p>
+                    </div>
+                    <p>|</p>
+                    <div class="number">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick1" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                        </svg>
+                        <p>: <span class="cardOwned-player">0</span></p>
+                    </div>
+                </div >
+            </div>
+
+            <div id="player2-container" class="container-player">
+                <p><span class="play2 colorPick2"><strong>No player</strong></span> </p>
+                <div class="GameOver attributeCard">
+                    <div class="cost">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick2" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                        <p>: <span class="life-player">0</span>  </p>
+                    </div>
+                    <p>|</p>
+                    <div class="number">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick2" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                        </svg>
+                        <p>: <span class="cardOwned-player">0</span></p>
+                    </div>
+                </div >
+            </div>
+
+            <div id="player3-container" class="container-player">
+                <p><span class ="play3 colorPick3"><strong>No player</strong></span> </p>
+                <div class="GameOver attributeCard">
+                    <div class="cost">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick3" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                        <p>: <span class="life-player">0</span>  </p>
+                    </div>
+                    <p>|</p>
+                    <div class="number">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                            <path class ="colorPick3" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                        </svg>
+                        <p>: <span class="cardOwned-player">0</span></p>
+                    </div>
+                </div >
+            </div>
+            
+        </div>
+
+        
+
+
+
+
+</section>
+
+
+ <!-- MIDDLE right -->
+ <section class="middle-right">
+
+    <!-- Stannis Baratheon -->
+
+    <div id="card-6" class="card-member rotate2">
+       <div class="family-color iconOrange">Stannis Baratheon</div>
+       <div id="stannis"></div>
+       <div>
+           <div class="attributeCard">
+               <div class="damage">
+                   <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                       <path class ="iconOrange" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                   </svg>
+                   <p class="numDamage">: <span class="value-card-damage">700</span></p>
+               </div>
+               <p>|</p>
+               <div class="cost">
+                   <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                       <path class ="iconOrange" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                   </svg>
+                   <p class="numCost">: <span class="value-card-life">150 </span></p>
+               </div>
+           </div >
+               <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+       </div>
+       <div class='player-container'>
+        <div>
+            <div class="player0-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player1-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player2-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player3-color hide"></div>
+        </div>
+   </div>
+</div>
+
+<!-- Renly Baratheon -->
+
+<div id="card-7" class="card-member rotate2">
+   <div class="family-color iconOrange">Renly Baratheon</div>
+   <div id="renly"></div>
+   <div>
+       <div class="attributeCard">
+           <div class="damage">
+               <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                   <path class ="iconOrange" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+               </svg>
+               <p class="numDamage">: <span class="value-card-damage">700</span></p>
+           </div>
+           <p>|</p>
+           <div class="cost">
+               <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                   <path class ="iconOrange" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+               </svg>
+               <p class="numCost">: <span class="value-card-life">150 </span></p>
+           </div>
+       </div >
+           <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+   </div>
+   <div class='player-container'>
+    <div>
+        <div class="player0-color hide"></div>
+    </div>
+
+    <div>
+        <div class="player1-color hide"></div>
+    </div>
+
+    <div>
+        <div class="player2-color hide"></div>
+    </div>
+
+    <div>
+        <div class="player3-color hide"></div>
+    </div>
+</div>
+</div>
+
+<!-- Robert Baratheon -->
+
+<div id="card-8" class="card-member rotate2">
+   <div class="family-color iconOrange">Robert Baratheon</div>
+   <div id="robert"></div>
+   <div>
+       <div class="attributeCard">
+           <div class="damage">
+               <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                   <path class ="iconOrange" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+               </svg>
+               <p class="numDamage">: <span class="value-card-damage">700</span></p>
+           </div>
+           <p>|</p>
+           <div class="cost">
+               <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                   <path class ="iconOrange" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+               </svg>
+               <p class="numCost">: <span class="value-card-life">150 </span></p>
+           </div>
+       </div >
+           <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+   </div>
+
+   <div class='player-container'>
+    <div>
+        <div class="player0-color hide"></div>
+    </div>
+
+    <div>
+        <div class="player1-color hide"></div>
+    </div>
+
+    <div>
+        <div class="player2-color hide"></div>
+    </div>
+
+    <div>
+        <div class="player3-color hide"></div>
+    </div>
+
+</div>
+</div>
+</div>
+
+</section>
+
+    </section>
+
+    
+         <!-- SECTION BAS -->
+
+         <section class="up-section inline">
+
+            <!-- Walker EVENT -->
+
+            <div id="card-14" class="event-member">
+                <div id="walker-battle" class="cost eventCard">
+                    <div class="damage">
+                        <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                            <path class ="iconWhite" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                        </svg>
+                        <p class="numGainEvent">: - <span class="value-card-damage">700</span></p>
+                    </div>
+                    
+                </div>
+                <div class='player-container'>
+                    <div>
+                        <div class="player0-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player1-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player2-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player3-color hide"></div>
+                    </div>
+            </div>
+        </div>
+
+              <!-- Lancel Lannister -->
+
+              <div id="card-13" class="card-member">
+                  <div class="family-color iconRed">Lancel Lannister</div>
+                  <div id="lancel"></div>
+                  <div>
+                      <div class="attributeCard">
+                          <div class="damage">
+                              <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                                  <path class ="iconRed" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                              </svg>
+                              <p class="numDamage">: <span class="value-card-damage">700</span></p>
+                          </div>
+                          <p>|</p>
+                          <div class="cost">
+                              <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                                  <path class ="iconRed" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                              </svg>
+                              <p class="numCost">: <span class="value-card-life">150 </span></p>
+                          </div>
+                      </div >
+                          <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+                  </div>
+                  <div class='player-container'>
+                    <div>
+                        <div class="player0-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player1-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player2-color hide"></div>
+                    </div>
+                
+                    <div>
+                        <div class="player3-color hide"></div>
+                    </div>
+              </div>
+          </div>
+
+          <!-- Jaime Lannister -->
+
+          <div id="card-12" class="card-member">
+              <div class="family-color iconRed">Jaime Lannister</div>
+              <div id="jaime"></div>
+              <div>
+                  <div class="attributeCard">
+                      <div class="damage">
+                          <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                              <path class ="iconRed" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                          </svg>
+                          <p class="numDamage">: <span class="value-card-damage">700</span></p>
+                      </div>
+                      <p>|</p>
+                      <div class="cost">
+                          <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                              <path class ="iconRed" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                          </svg>
+                          <p class="numCost">: <span class="value-card-life">150</span> </p>
+                      </div>
+                  </div >
+                      <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+              </div>
+              <div class='player-container'>
+                <div>
+                    <div class="player0-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player1-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player2-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player3-color hide"></div>
+                </div>
+          </div>
+      </div>
+
+      <!-- Cersei Lannister  -->
+      
+
+      <div id="card-11" class="card-member">
+          <div class="family-color iconRed">Cersei Lannister</div>
+          <div id="cersei"></div>
+          <div>
+              <div class="attributeCard">
+                  <div class="damage">
+                      <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                          <path class ="iconRed" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                      </svg>
+                      <p class="numDamage">: <span class="value-card-damage">700</span></p>
+                  </div>
+                  <p>|</p>
+                  <div class="cost">
+                      <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                          <path class ="iconRed" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                      </svg>
+                      <p class="numCost">: <span class="value-card-life">150 </span></p>
+                  </div>
+              </div >
+                  <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+                  <div class='player-container'>
+              </div>
+          </div>
+          <div class='player-container'>
+            <div>
+                <div class="player0-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player1-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player2-color hide"></div>
+            </div>
+        
+            <div>
+                <div class="player3-color hide"></div>
+            </div>
+    </div>
+      </div>
+  
+
+  <!-- Tyrion Lannister -->
+
+  <div id="card-10" class="card-member">
+    <div class="family-color iconRed">Tyrion Lannister</div>
+    <div id="tyrion"></div>
+    <div>
+        <div class="attributeCard">
+            <div class="damage">
+                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 24 24">
+                    <path class ="iconRed" d="M6.2,2.44L18.1,14.34L20.22,12.22L21.63,13.63L19.16,16.1L22.34,19.28C22.73,19.67 22.73,20.3 22.34,20.69L21.63,21.4C21.24,21.79 20.61,21.79 20.22,21.4L17,18.23L14.56,20.7L13.15,19.29L15.27,17.17L3.37,5.27V2.44H6.2M15.89,10L20.63,5.26V2.44H17.8L13.06,7.18L15.89,10M10.94,15L8.11,12.13L5.9,14.34L3.78,12.22L2.37,13.63L4.84,16.1L1.66,19.29C1.27,19.68 1.27,20.31 1.66,20.7L2.37,21.41C2.76,21.8 3.39,21.8 3.78,21.41L7,18.23L9.44,20.7L10.85,19.29L8.73,17.17L10.94,15Z"/>
+                </svg>
+                <p class="numDamage">: <span class="value-card-damage">700</span></p>
+            </div>
+            <p>|</p>
+            <div class="cost">
+                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path class ="iconRed" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                </svg>
+                <p class="numCost">: <span class="value-card-life">150 </span></p>
+            </div>
+        </div >
+            <p class="subTitle"> <span class="sub-player-name">Nobody</span> own the member</p>
+    </div>
+    <div class='player-container'>
+        <div>
+            <div class="player0-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player1-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player2-color hide"></div>
+        </div>
+    
+        <div>
+            <div class="player3-color hide"></div>
+        </div>
+</div>
+</div>
+
+
+
+
+
+          <!-- DRAGON BATTLE EVENT -->
+
+          <div id="card-9" class="event-member">
+            <div id="dragon-battle" class="cost eventCard">
+                <svg class="iconSize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24">
+                    <path class ="iconWhite" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                </svg>
+                <p class="numGainEvent">: + <span class="value-card-life">150</span></p>
+            </div>
+            <div class='player-container'>
+                <div>
+                    <div class="player0-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player1-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player2-color hide"></div>
+                </div>
+            
+                <div>
+                    <div class="player3-color hide"></div>
+                </div>
+        </div>
+
+      </section>
+
+      
+</body>
+
+
+</html>

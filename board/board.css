@@ -1,0 +1,476 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+.main-image {
+	background-image: url("../images/bordImage.jpg");
+	background-size: cover;
+	width: 100%;
+	/*height: 100vh;*/
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat: repeat;
+}
+
+/*Player*/
+
+.play0,
+.play1,
+.play2,
+.play3 {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.player-container {
+	display: flex;
+	justify-content: center;
+}
+
+.player0-color {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border-radius: 100px;
+	box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.player1-color {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	border-radius: 100px;
+	box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.player2-color {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border-radius: 100px;
+	box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.player3-color {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 100px;
+	box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.hide {
+	visibility: hidden;
+}
+
+/*CARD GENERAL*/
+.event-member {
+	width: 250px;
+	height: 150px;
+	margin: 50px;
+}
+
+.eventCard {
+	text-align: center;
+	line-height: 250px;
+}
+
+.card-member {
+	background-color: white;
+	width: 220px;
+	height: 350px;
+	margin: 50px;
+	border-radius: 6px;
+}
+/*
+.card-member2 {
+	background-color: white;
+	width: 220px;
+	height: 350px;
+	border-radius: 6px;
+}
+*/
+
+.inline {
+	display: flex;
+	align-items: center;
+}
+
+/*MEMBERS CARDS*/
+
+.family-color {
+	height: 15%;
+	text-align: center;
+	line-height: 55px;
+	font-family: 'Rancho', cursive;
+	color: white;
+	border-radius: 6px 6px 0 0;
+}
+
+.iconSize {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.damage,
+.cost,
+.number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.attributeCard {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 12px 0 7px 0;
+}
+.subTitle {
+	text-align: center;
+	color: lightgray;
+	font-size: 12px;
+}
+
+.sub-player-name {
+	font-size: 12px;
+}
+
+/*UNIQUE CARDS CHANGES*/
+
+.iconWhite {
+	fill: white;
+	background-color: white;
+}
+
+.iconBlue {
+	fill: rgb(26, 39, 228);
+	background-color: rgb(26, 39, 228);
+}
+
+.iconRed {
+	fill: red;
+	background-color: red;
+}
+
+.iconOrange {
+	fill: orange;
+	background-color: orange;
+}
+
+.iconViolet {
+	fill: rgb(179, 14, 179);
+	background-color: rgb(179, 14, 179);
+}
+
+#nedStark {
+	height: 65%;
+	background-image: url("../images/characters/ned.jpg");
+	background-size: cover;
+	background-position: left;
+	filter: grayscale(50%);
+}
+
+#sansa {
+	height: 65%;
+	background-image: url("../images/characters/sansa.jpeg");
+	background-size: cover;
+	background-position: center;
+	filter: grayscale(50%);
+}
+
+#robb {
+	height: 65%;
+	background-image: url("../images/characters/robb.jpeg");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#arya {
+	height: 65%;
+	background-image: url("../images/characters/arya.jpg");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#daenerys {
+	height: 65%;
+	background-image: url("../images/characters/daenerys.jpg");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#rhaegar {
+	height: 65%;
+	background-image: url("../images/characters/rhaegar.png");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#viserys {
+	height: 65%;
+	background-image: url("../images/characters/Viserys.jpg");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#stannis {
+	height: 65%;
+	background-image: url("../images/characters/stannis.png");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#renly {
+	height: 65%;
+	background-image: url("../images/characters/Renly_Baratheon.png");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#robert {
+	height: 65%;
+	background-image: url("../images/characters/robert.jpg");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#lancel {
+	height: 65%;
+	background-image: url("../images/characters/lancel.png");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#jaime {
+	height: 65%;
+	background-image: url("../images/characters/jaime.jpeg");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#cersei {
+	height: 65%;
+	background-image: url("../images/characters/cersei.png");
+	background-size: cover;
+	background-position: top;
+	filter: grayscale(50%);
+}
+
+#tyrion {
+	height: 65%;
+	background-image: url("../images/characters/tyrion.png");
+	background-size: cover;
+	background-position: center;
+	filter: grayscale(50%);
+}
+
+#kings-landing {
+	background-image: url("../images/kingLanding.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 6px;
+	filter: grayscale(50%);
+}
+
+#nerra-battle {
+	background-image: url("../images/battleNera.png");
+	background-size: cover;
+	background-position: center;
+	border-radius: 6px;
+	filter: grayscale(50%);
+}
+
+#dragon-battle {
+	background-image: url("../images/dragons.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 6px;
+	filter: grayscale(50%);
+}
+
+#walker-battle {
+	background-image: url("../images/deadWalker.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 6px;
+	filter: grayscale(50%);
+}
+.rotate {
+	transform: rotate(-90deg);
+}
+
+.rotate2 {
+	transform: rotate(90deg);
+}
+
+.middle {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.middle-center {
+	width: 30%;
+}
+
+.middle-both {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.middle-center-left {
+	width: 90%;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+
+.middle-center-right {
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	border-radius: 6px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	opacity: 0.7;
+	margin-bottom: 50px;
+}
+
+#iron-throne {
+	font-size: 200%;
+}
+
+#winner-player-name {
+	display: block;
+	font-size: 300%;
+}
+
+.container-player {
+	background-color: white;
+	width: 90%;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+	border-radius: 6px;
+	opacity: 0.7;
+}
+
+.button-action {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+}
+
+.button-action button {
+	margin: 10px;
+}
+
+.player-init {
+	margin-bottom: 50px;
+}
+
+/* BUTTONS */
+
+#buy-btn {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+#dice-btn {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+#cancel-btn {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+#buy-btn:hover {
+	background-color: #d3c5a7;
+	color: black;
+}
+
+#dice-btn:hover {
+	background-color: #d3c5a7;
+	color: black;
+}
+
+#buy-btn:active {
+	background-color: #d3c5a7;
+	transform: translateY(1px);
+}
+
+#dice-btn:active {
+	background-color: #d3c5a7;
+	transform: translateY(1px);
+}
+
+#cancel-btn:hover {
+	background-color: #d3c5a7;
+	color: black;
+}
+
+#cancel-btn:active {
+	background-color: #d3c5a7;
+	transform: translateY(1px);
+}
+
+#player-play {
+	font-size: 30px;
+	color: red;
+	font-weight: 600;
+}
+
+#message-play {
+	font-size: 30px;
+	color: black;
+	font-weight: 600;
+}
+
+.numGainEvent {
+	color: white;
+	font-size: 26px;
+}
+
+.numDamageEvent {
+	color: white;
+	font-size: 26px;
+}

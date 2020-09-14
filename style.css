@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+.main-image {
+	background-image: url("./images/mainImage1.png");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat: repeat;
+}
+
+.order {
+	background-color: white;
+	opacity: 95%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 40%;
+	height: 60px;
+	padding: 10px;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.order2 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 40%;
+	text-align: center;
+}
+
+.order3 {
+	justify-content: center;
+}
+.player-select div {
+	width: 40%;
+}
+
+.player-select,
+.start-select {
+	margin-top: 20px;
+}
+
+/*BUTTONS*/
+
+.btn {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #d3c5a7;
+	color: black;
+}
+
+button:active {
+	background-color: #d3c5a7;
+	transform: translateY(1px);
+}
+
+/*START BTN*/
+
+.start-btn {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #d3c5a7;
+	color: black;
+}
+
+button:active {
+	background-color: #d3c5a7;
+	transform: translateY(1px);
+}
+
+#start:hover {
+	background-color: #d3c5a7;
+	color: black;
+}
+
+#start:active {
+	background-color: #d3c5a7;
+	transform: translateY(1px);
+}
+
+/*INPUTS*/
+
+.name-input {
+	padding: 5px;
+	width: 50%;
+	color: black;
+}
+
+/*
+::placeholder { 
+	color: white;
+	opacity: 0.8; 
+  }
+
+  */
+
+.color-input {
+	padding: 6px;
+	width: 20%;
+	color: white;
+	margin-left: 30px;
+}
+
+.set-up-rules {
+	margin-top: 20px;
+	background-color: white;
+	opacity: 95%;
+	justify-content: space-around;
+	align-items: center;
+	width: 40%;
+	padding: 10px;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.element {
+	display: flex;
+	margin: 20px;
+	justify-content: center;
+	font-weight: 600;
+}
+
+h2 {
+	margin-right: 10px;
+	color: #d3c5a7;
+	font-size: 24px;
+}
+
+.h1 {
+	font-size: 36px;
+	font-family: 'Rancho', cursive;
+}
