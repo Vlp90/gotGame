@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +16,16 @@
 <body>
 
 
-<section class="main-image">
+    <section class="main-image">
 
-    
-<div class = "main-select order">
-    <button id="removePlayer" class="btn btnLess"><strong>-</strong></button>
-    <h1>Select numbers of Players</h1>
-    <button id="addPlayer" class="btn btnMore"><strong>+</strong></button>
-</div>
 
-<!--
+        <div class="main-select order">
+            <button id="removePlayer" class="btn btnLess"><strong>-</strong></button>
+            <h1>Select numbers of Players</h1>
+            <button id="addPlayer" class="btn btnMore"><strong>+</strong></button>
+        </div>
+
+        <!--
 <div class= "player-select order order3">
     <input id="name-input" type="text" placeholder="Enter Player's name">
     
@@ -41,47 +42,57 @@
 </div>
 -->
 
-<div class = "start-select order">
-    <button id="startGame"  class="start-btn" >Start the game</button>   
-</div>
+        <div class="start-select order">
+            <button id="startGame" class="start-btn">Start the game</button>
+        </div>
 
-<div class = "set-up-rules">
+        <div class="set-up-rules">
 
-    <!-- <button id="addRules"  class="start-btn" >See rules</button>   -->
+            <!-- <button id="addRules"  class="start-btn" >See rules</button>   -->
 
-     <div class ="rulesToSee">
-    <h1 class="h1 element">Rules </h1>
- 
-    <div class="element">
-        <h2>1</h2>
-        <p>Player rolls dice</p>
-    </div>
+            <div class="rulesToSee">
+                <h1 class="h1 element">Rules </h1>
 
-    <div class="element">
-        <h2>2</h2>
-        <p>When the card is available player can buy them </p>
-    </div>
+                <div class="element">
+                    <h2>1</h2>
+                    <p>Player rolls dice</p>
+                </div>
 
-    <div class="element">
-        <h2>3</h2>
-        <p>If someone already own the card the player take damage and the owner gain the same life value.</p>
-    </div>
+                <div class="element">
+                    <h2>2</h2>
+                    <p>When the card is available player can buy them </p>
+                </div>
 
-    <div class="element">
-        <h2>4</h2>
-        <p>There are 4 event cards which can increase or decrease your life.</p>
-    </div>
+                <div class="element">
+                    <h2>3</h2>
+                    <p>If someone already own the card the player take damage and the owner gain the same life value.
+                    </p>
+                </div>
 
-    <div class="element">
-        <h2>5</h2>
-        <p>The winner is the last players on the board</p>
-    </div>
+                <div class="element">
+                    <h2>4</h2>
+                    <p>There are 4 event cards which can increase or decrease your life.</p>
+                </div>
 
-    <!-- <button id="removeRules" class="btn btnMore"><strong>Close</strong></button> -->
+                <div class="element">
+                    <h2>5</h2>
+                    <p>The winner is the last players on the board</p>
+                </div>
 
-</div> 
-</div>
-</section>
+                <!-- <button id="removeRules" class="btn btnMore"><strong>Close</strong></button> -->
 
+            </div>
+        </div>
+    </section>
+
+    <figure class='audioTheme'>
+        <audio
+        controls
+        autoplay
+        loop
+            src="./musique/theme.mp3">
+        </audio>
+    </figure>
 </body>
+
 </html>
